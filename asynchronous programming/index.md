@@ -1,4 +1,4 @@
-<div style="position:fixed"><a href="https://github.com/ashishtayal89/learnjavascript/blob/master/readme.md">Home</a><div> 
+<div style="position:fixed"><a href="https://github.com/ashishtayal89/learnjavascript#readme">Home</a><div> 
 
 # Asynchronous Programming
 
