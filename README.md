@@ -25,8 +25,8 @@ It also covers some key features of ES6 and ES7
     7. [rest(ES6)](https://github.com/ashishtayal89/learnjavascript/blob/master/variables/index.md)
 
 4. [Symbols(ES6)](https://github.com/ashishtayal89/learnjavascript/blob/master/symbols/index.md)
-    1. [Introduction]((https://github.com/ashishtayal89/learnjavascript/blob/master/symbols/index.md))
-    2. [Use Cases]((https://github.com/ashishtayal89/learnjavascript/blob/master/symbols/index.md))
+    1. [Introduction](https://github.com/ashishtayal89/learnjavascript/blob/master/symbols/index.md)
+    2. [Use Cases](https://github.com/ashishtayal89/learnjavascript/blob/master/symbols/index.md)
 
 5. [Types](https://github.com/ashishtayal89/learnjavascript/blob/master/types/index.md)
     1. [Primitive](https://github.com/ashishtayal89/learnjavascript/blob/master/types/index.md)
