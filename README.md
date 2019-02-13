@@ -1,7 +1,7 @@
 # Javascript 
 
 
-## Scope
+## 1. Scope
 
 ### Introduction
 ### Lexical Scope
@@ -9,13 +9,13 @@
 ### Use Case
 
 
-## Closures
+## 2. Closures
 
 ### Introduction
 ### Use Cases
 
 
-## Variables
+## 3. Variables
 
 ### var(ES5)
 ### let(ES6)
@@ -25,19 +25,19 @@
 ### spread(ES6)
 ### rest(ES6)
 
-## Symbols(ES6)
+## 4. Symbols(ES6)
 
 ### Introduction
 ### Use Cases
 
 
-## Types
+## 5. Types
 
 ### Primitive
 ### Non-Primitive
 
 
-## Object Properties
+## 6. Object Properties
 
 ### enumerable
 ### iterable
@@ -46,7 +46,7 @@
 ### L-value
 
 
-## Object
+## 7. Object
 
 ### Different ways to create object
 ### delete
@@ -54,7 +54,7 @@
 ### Object.assign(ES6)
 
 
-## Build In Objects
+## 8. Build In Objects
 
 ### Array
 ### Math
@@ -65,7 +65,7 @@
 ### WeakMap(ES6)
 
 	
-## Functionals
+## 9. Functionals
 
 ### Prototype and Chaining
 ### Function/eval/with
@@ -76,7 +76,7 @@
 ### Functor and Monards
 
 
-## Class(ES6)
+## 10. Class(ES6)
 
 ### Constructor
 ### get and set
@@ -86,7 +86,7 @@
 ### overrides
 
 
-## Modules
+## 11. Modules
 
 ### IIFE(ES5)
 ### AMD
@@ -94,21 +94,21 @@
 ### ES6
 
 
-## Asynchronous Programming
+## 12. Asynchronous Programming
 
 ### Callback
 ### Promise(ES6)
 ### Async and Await(ES7)
 
 
-## Inheritance Design Patterns
+## 13. Inheritance Design Patterns
 
 ### Functional Prototype
 ### OOLO
 ### Classes(ES6)
 
 
-## Polyfills
+## 14. Polyfills
 
 ### Object.assign
 ### Object.create
