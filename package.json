@@ -1,0 +1,26 @@
+{
+  "name": "learnjavascript",
+  "version": "1.0.0",
+  "description": "Some basic javascript concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishtayal89/learnjavascript.git"
+  },
+  "keywords": [
+    "Javascript",
+    "ES6"
+  ],
+  "author": "Ashish Tayal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishtayal89/learnjavascript/issues"
+  },
+  "homepage": "https://github.com/ashishtayal89/learnjavascript#readme",
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
