@@ -1,15 +1,17 @@
-<div><a href="https://github.com/ashishtayal89/learnjavascript#readme">Home</a></div> 
+<div><a href="https://github.com/ashishtayal89/learnjavascript#readme">Home</a></div>
 
 # Asynchronous Programming
 
 <div id="callback"><div>
 
 ## Callback
+
 ## Promise(ES6)
+
 ## Asynchronous Generators(ES6)
 
 ```javascript
-const isPromise = obj => Boolean(obj) && typeof obj.then === 'function';
+const isPromise = obj => Boolean(obj) && typeof obj.then === "function";
 
 const next = (iter, callback, prev = undefined) => {
   const item = iter.next(prev);
@@ -26,26 +28,27 @@ const next = (iter, callback, prev = undefined) => {
   }
 };
 
-const gensync = (fn) =>
-    (...args) => new Promise(resolve => {
-  next(fn(...args), val => resolve(val));
-});
+const gensync = fn => (...args) =>
+  new Promise(resolve => {
+    next(fn(...args), val => resolve(val));
+  });
 
 /* How to use gensync() */
 
-const fetchSomething = () => new Promise((resolve) => {
-  setTimeout(() => resolve('future value'), 500);
-});
+const fetchSomething = () =>
+  new Promise(resolve => {
+    setTimeout(() => resolve("future value"), 500);
+  });
 
-const asyncFunc = gensync(function* () {
+const asyncFunc = gensync(function*() {
   const result = yield fetchSomething(); // returns promise
 
   // waits for promise and uses promise result
-  yield result + ' 2';
+  yield result + " 2";
 });
 
 // Call the async function and pass params.
-asyncFunc('param1', 'param2', 'param3')
-  .then(val => console.log(val)); // 'future value 2'
+asyncFunc("param1", "param2", "param3").then(val => console.log(val)); // 'future value 2'
 ```
+
 ### Async and Await(ES7)
