@@ -2,12 +2,12 @@
 
 # Javascript
 
-This tutorial is designed for those who have a basic understanding of javascript. It incluses basic as well as advanced concepts of javascript.
+This tutorial is designed for those who have a advanced understanding of javascript. It incluses advanced concepts of javascript.
 It also covers some key features of ES6 and ES7
 
-1. [Scope](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
+1. [Real Time Web Apps](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
 
-   1. [Introduction](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
+   1. [SSE](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
    2. [Lexical Scope](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
    3. [Different Scope](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)
    4. [Use Cases](https://github.com/ashishtayal89/learnjavascript/blob/master/scope/index.md)

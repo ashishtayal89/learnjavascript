@@ -1,7 +1,7 @@
 {
   "name": "learnjavascript",
   "version": "1.0.0",
-  "description": "Some basic javascript concepts",
+  "description": "Some advanced javascript concepts",
   "main": "index.js",
   "scripts": {
     "test": "test"

@@ -1,0 +1,15 @@
+{
+  "name": "real_time_web_app",
+  "version": "1.0.0",
+  "description": "<div><a href=\"https://github.com/ashishtayal89/learnjavascript#readme\">Home</a></div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "init-express"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "init-express": "^1.1.0"
+  }
+}
