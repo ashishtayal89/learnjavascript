@@ -1,14 +1,41 @@
 <div><a href="https://github.com/ashishtayal89/learnjavascript#readme">Home</a></div>
 
-# Asynchronous Programming
+## Convert a callback into promise
 
-<div id="callback"><div>
+```javascript
+const phoneList = ["Apple", "Samsung"];
+const phoneDetail = {
+  name: "Apple",
+  color: "black",
+  price: 100000
+};
 
-## Callback
+const fetchPhoneList = callback => {
+  setTimeout(() => callback(phoneList), 2000);
+};
 
-## Promise(ES6)
+const fetchPhoneDetail = callback => {
+  setTimeout(() => callback(phoneDetail), 1000);
+};
 
-- Promisification
+const afterDetailsFetch = details => console.log(details);
+
+fetchPhoneList(() => {
+  fetchPhoneDetail(details => afterDetailsFetch(details));
+});
+
+const fetchPhoneListPromise = () =>
+  new Promise(resolve => setTimeout(() => resolve(phoneList), 2000));
+
+const fetchPhoneDetailPromise = () =>
+  new Promise(resolve => setTimeout(() => resolve(phoneDetail), 1000));
+
+fetchPhoneListPromise()
+  .then(fetchPhoneDetailPromise)
+  .then(afterDetailsFetch);
+```
+
+## Promisification
 
 ```javascript
 function loadScript(src, callback) {
@@ -48,7 +75,37 @@ function promisify(f) {
 // loadScriptPromise(...).then(...);
 ```
 
-## Asynchronous Generators(ES6)
+## Tell the output
+
+```javascript
+function foo() {
+  console.log("foo");
+}
+function bar() {
+  setTimeout(foo);
+  console.log("bar");
+}
+function baz() {
+  setTimeout(() => console.log("baz"), 2000);
+}
+function app() {
+  new Promise(r => r()).then(() => console.log("app"));
+}
+function liz() {
+  setTimeout(() => console.log("liz"));
+}
+function rep() {
+  Promise.resolve().then(() => console.log("rep"));
+}
+console.log("start");
+foo();
+bar();
+baz();
+app();
+liz();
+rep();
+console.log("end");
+```
 
 ```javascript
 const isPromise = obj => Boolean(obj) && typeof obj.then === "function";
@@ -61,10 +118,10 @@ const next = (iter, callback, prev = undefined) => {
 
   if (isPromise(value)) {
     value.then(val => {
-      setImmediate(() => next(iter, callback, val));
+      setTimeout(() => next(iter, callback, val));
     });
   } else {
-    setImmediate(() => next(iter, callback, value));
+    setTimeout(() => next(iter, callback, value));
   }
 };
 
@@ -90,5 +147,3 @@ const asyncFunc = gensync(function*() {
 // Call the async function and pass params.
 asyncFunc("param1", "param2", "param3").then(val => console.log(val)); // 'future value 2'
 ```
-
-### Async and Await(ES7)
