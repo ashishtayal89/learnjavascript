@@ -1,54 +1,7 @@
-<div><a href="https://github.com/ashishtayal89/learnjavascript#readme">Home</a></div>
+# Notes
 
-# Asynchronous Programming
-
-<div id="callback"><div>
-
-## Callback
-
-## Promise(ES6)
-
-## Asynchronous Generators(ES6)
-
-```javascript
-const isPromise = obj => Boolean(obj) && typeof obj.then === "function";
-
-const next = (iter, callback, prev = undefined) => {
-  const item = iter.next(prev);
-  const value = item.value;
-
-  if (item.done) return callback(prev);
-
-  if (isPromise(value)) {
-    value.then(val => {
-      setImmediate(() => next(iter, callback, val));
-    });
-  } else {
-    setImmediate(() => next(iter, callback, value));
-  }
-};
-
-const gensync = fn => (...args) =>
-  new Promise(resolve => {
-    next(fn(...args), val => resolve(val));
-  });
-
-/* How to use gensync() */
-
-const fetchSomething = () =>
-  new Promise(resolve => {
-    setTimeout(() => resolve("future value"), 500);
-  });
-
-const asyncFunc = gensync(function*() {
-  const result = yield fetchSomething(); // returns promise
-
-  // waits for promise and uses promise result
-  yield result + " 2";
-});
-
-// Call the async function and pass params.
-asyncFunc("param1", "param2", "param3").then(val => console.log(val)); // 'future value 2'
-```
-
-### Async and Await(ES7)
+- Primitive datatype with least operator
+- Used to define inner private properties/identifier of an object ie properties used inside a class
+- Anonymous and non-enumerable property
+- Whenever an object needs to be iterated (such as at the beginning of a for..of loop), its @@iterator method is called with no arguments, and the returned iterator is used to obtain the values to be iterated.
+- Well known symbols
