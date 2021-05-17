@@ -109,6 +109,8 @@ rep();
 console.log("end");
 ```
 
+## Using gensync
+
 ```javascript
 const isPromise = obj => Boolean(obj) && typeof obj.then === "function";
 
